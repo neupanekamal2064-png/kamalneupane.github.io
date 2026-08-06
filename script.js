@@ -20,15 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Contact form
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      alert("Thank you! Your message has been sent.");
-      form.reset();
-    });
-  }
+form.addEventListener("submit", () => {
+  alert("Thank you! Your message has been sent.");
+});
+
 
 });
 const text = "IT Student | Web Development Enthusiast | Future Developer";
@@ -49,4 +44,6 @@ document.querySelectorAll("nav a").forEach(link => {
   }
 });
 document.body.classList.add("page-transition");
+
+
 
